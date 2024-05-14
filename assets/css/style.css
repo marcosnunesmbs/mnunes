@@ -1,0 +1,12 @@
+.main-color {
+    color: #00586C !important;
+  }
+.main-color-bg {
+    background: #00586C !important;
+}
+body{
+    background: antiquewhite;;
+}
+.social i {
+    font-size: 25px;
+}
