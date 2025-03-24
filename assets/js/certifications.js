@@ -13,5 +13,11 @@ const certifications = [
         name: "AI-900",
         imgSrc: "./assets/img/badges/ai900.png",
         alt: "AI-900 Badge"
+    },
+    ,
+    {
+        name: "GitHub Copilot",
+        imgSrc: "./assets/img/badges/copilot.png",
+        alt: "GitHub Copilot Badge"
     }
 ];

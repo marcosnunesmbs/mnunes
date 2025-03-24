@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', function () {
     if (skillsContainer) {
         skills.forEach(skill => {
             const skillDiv = document.createElement('div');
-            skillDiv.className = `w-12 h-12 md:w-20 md:h-20 hover:bg-gray-800 ${skill.color} text-2xl md:text-3xl hover:text-4xl transform transition-all duration-200 rounded-lg p-6 hover:p-4 text-center flex items-center justify-center`;
+            skillDiv.className = `w-12 h-12 md:w-20 md:h-20 hover:bg-gray-800 ${skill.color} text-2xl md:text-3xl hover:text-4xl transform transition-all duration-200 rounded-lg p-2 md:p-6 hover:p-4 text-center flex items-center justify-center`;
 
             if (skill.image) {
-                skillDiv.innerHTML = `<img src="${skill.image}" alt="icon ${skill.name}" class="w-20 h-auto">`;
+                skillDiv.innerHTML = `<di><img src="${skill.image}" alt="icon ${skill.name}" class="w-8 h-auto md:w-12 md:h-auto"><div>`;
             } else {
                 skillDiv.innerHTML = `<i class="fa-brands ${skill.icon} text-white"></i>`;
             }

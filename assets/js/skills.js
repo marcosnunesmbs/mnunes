@@ -25,6 +25,11 @@ const skills = [
         color: "bg-orange-600"
     },
     {
+        name: "Git Hub",
+        icon: "fa-github",
+        color: "bg-gray-600"
+    },
+    {
         name: "PHP",
         icon: "fa-php",
         color: "bg-indigo-600"
