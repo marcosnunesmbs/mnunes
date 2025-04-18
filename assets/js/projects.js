@@ -3,7 +3,7 @@ const projects = [
     {
         name: "ChefIA",
         url: "https://chefia.mnunes.xyz/",
-        imgSrc: "https://minio-s8k08cs4kc4wkwk4gg4g4c80.mnunes.xyz/public/chefia/chef-ia-logo-sm.png",
+        imgSrc: "https://s3.mnunes.xyz/public/chefia/chef-ia-logo-sm.png",
         alt: "Logo ChefIA",
         description: "A Recipe Generator Application made with AI to suggest recipes based on available ingredients. Using Gemini API, Tailwind, NodeJS, Google Gemini and GCP."
     },
