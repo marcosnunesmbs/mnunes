@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (projectsContainer) {
         projects.forEach(project => {
             const projectDiv = document.createElement('div');
-            projectDiv.className = 'w-full lg:w-1/2 xl:w-1/3 p-4 mb-2';
+            projectDiv.className = 'w-full lg:w-1/2 xl:w-1/4 p-4 mb-2';
             projectDiv.innerHTML = `
                 <div class="flex flex-col items-center">
                     <a href="${project.url}" target="_blank">
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             class="w-full h-12 md:h-12 md:w-full mb-2">
                     </a>
                     <h3 class="text-lg font-bold text-center">${project.name}</h3>
-                    <p class="mt-2 text-center text-sm md:px-14">
+                    <p class="mt-2 text-center text-sm font-light md:px-14">
                         ${project.description}
                     </p>
                 </div>
