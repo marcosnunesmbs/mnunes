@@ -1,6 +1,13 @@
 // assets/js/projects.js
 const projects = [
     {
+        name: "NutriAI",
+        url: "https://nutri.mnunes.xyz/",
+        imgSrc: "https://nutri.mnunes.xyz/nutri-ai-logo-2.png",
+        alt: "Logo NutriAI",
+        description: "An AI-powered app to evaluate your meals throughout the day. Using Gemini API, Tailwind, NodeJS, Google Gemini and Coolify."
+    },
+    {
         name: "ChefIA",
         url: "https://chefia.mnunes.xyz/",
         imgSrc: "https://s3.mnunes.xyz/public/chefia/chef-ia-logo-sm.png",
