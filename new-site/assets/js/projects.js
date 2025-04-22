@@ -15,7 +15,7 @@ const projects = [
         description: "A Recipe Generator Application made with AI to suggest recipes based on available ingredients. Using Gemini API, Tailwind, NodeJS, Google Gemini and Coolify."
     },
     {
-        name: "My Next Read",
+        name: "My Next",
         url: "https://mynext.mnunes.xyz/",
         imgSrc: "https://mynext.mnunes.xyz/resource/icon.png",
         alt: "My Next",
