@@ -5,14 +5,14 @@ const projects = [
         url: "https://chefia.mnunes.xyz/",
         imgSrc: "https://s3.mnunes.xyz/public/chefia/chef-ia-logo-sm.png",
         alt: "Logo ChefIA",
-        description: "A Recipe Generator Application made with AI to suggest recipes based on available ingredients. Using Gemini API, Tailwind, NodeJS, Google Gemini and GCP."
+        description: "A Recipe Generator Application made with AI to suggest recipes based on available ingredients. Using Gemini API, Tailwind, NodeJS, Google Gemini and Coolify."
     },
     {
         name: "My Next Read",
         url: "https://mynext.mnunes.xyz/",
         imgSrc: "https://mynext.mnunes.xyz/resource/icon.png",
         alt: "My Next",
-        description: "A AI Application made with Gemini API to recommend Books and Movies based on your like. Using Bootstrap 5, NodeJS, Google Gemini and GCP."
+        description: "A AI Application made with Gemini API to recommend Books and Movies based on your like. Using Bootstrap 5, NodeJS, Google Gemini and Coolify."
     },
     {
         name: "Coinpaprika BR Bot",
