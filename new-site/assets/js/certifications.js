@@ -1,22 +1,21 @@
-const certifications = [
+export const certifications = [
     {
-        name: "ITIL Foundation",
+        name: "ITIL Foundation", width: 128, height: 128, loading: "lazy",
         imgSrc: "./assets/img/badges/itil.png",
         alt: "ITIL Foundation Badge"
     },
     {
-        name: "Scrum",
+        name: "Scrum", width: 128, height: 128, loading: "lazy",
         imgSrc: "./assets/img/badges/scrum.png",
         alt: "Scrum Badge"
     },
     {
-        name: "AI-900",
+        name: "AI-900", width: 128, height: 128, loading: "lazy",
         imgSrc: "./assets/img/badges/ai900.png",
         alt: "AI-900 Badge"
     },
-    ,
     {
-        name: "GitHub Copilot",
+        name: "GitHub Copilot", width: 128, height: 128, loading: "lazy",
         imgSrc: "./assets/img/badges/copilot.png",
         alt: "GitHub Copilot Badge"
     }

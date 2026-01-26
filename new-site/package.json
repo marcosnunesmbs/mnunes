@@ -1,0 +1,25 @@
+{
+  "name": "new-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --minify",
+    "build:js": "esbuild assets/js/main.js --bundle --minify --outfile=assets/js/bundle.min.js",
+    "build": "npm run build:css && npm run build:js",
+    "watch:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch",
+    "watch:js": "esbuild assets/js/main.js --bundle --outfile=assets/js/bundle.min.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "esbuild": "^0.27.2",
+    "tailwindcss": "^4.1.18"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.1.0"
+  }
+}

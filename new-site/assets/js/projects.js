@@ -1,63 +1,63 @@
 // assets/js/projects.js
-const projects = [
+export const projects = [
     {
-        name: "CoinGecko MCP",
+        name: "CoinGecko MCP", width: 48, height: 48, loading: "lazy",
         url: "https://www.npmjs.com/package/mcp_coingecko_price_ts",
         imgSrc: "./assets/img/logos/mcp.svg",
         alt: "Logo of MCP Coingecko",
         description: "A MCP Server module to get cryptocurrency prices from Coingecko API. Available on NPM."
     },
     {
-        name: "NutriAI",
+        name: "NutriAI", width: 48, height: 48, loading: "lazy",
         url: "https://nutri.mnunes.xyz/",
         imgSrc: "https://nutri.mnunes.xyz/nutri-ai-logo-2.png",
         alt: "Logo of NutriAI",
         description: "An AI-powered app to evaluate your meals throughout the day. Using Tailwind, NodeJS, Google Gemini and Coolify."
     },
     {
-        name: "ChefIA",
+        name: "ChefIA", width: 48, height: 48, loading: "lazy",
         url: "https://chefia.mnunes.xyz/",
         imgSrc: "https://chefia.mnunes.xyz/chef-ia-logo-sm.png",
         alt: "Logo of ChefIA",
         description: "A Recipe Generator Application made with AI to suggest recipes based on available ingredients. Using Tailwind, NodeJS, Google Gemini and Coolify."
     },
     {
-        name: "My Next",
+        name: "My Next", width: 48, height: 48, loading: "lazy",
         url: "https://mynext.mnunes.xyz/",
         imgSrc: "https://mynext.mnunes.xyz/resource/icon.png",
         alt: "My Next",
         description: "A AI Application made with Gemini API to recommend Books and Movies based on your like. Using Bootstrap 5, NodeJS, Google Gemini and Coolify."
     },
     {
-        name: "Coinpaprika BR Bot",
+        name: "Coinpaprika BR Bot", width: 48, height: 48, loading: "lazy",
         url: "https://github.com/marcosnunesmbs/coinpaprika-br-bot",
         imgSrc: "./assets/img/logos/cppbr.jpg",
         alt: "Coinpaprika BR Bot",
         description: "A Telegram bot to consult cryptocurrency prices and other things using the Coinparika API. <a href='https://t.me/cppbr_bot' target='_blank'>Access Bot</a>"
     },
     {
-        name: "WpCreator",
+        name: "WpCreator", width: 48, height: 48, loading: "lazy",
         url: "https://github.com/marcosnunesmbs/wpcreator/",
         imgSrc: "./assets/img/logos/wpcreator.png",
         alt: "Logo Glaucia PSI",
         description: "A Open Source PHP CLI to create Wordpress Custom Post Types, Elementor's Widgets and another utilityes by yaml/json files."
     },
     {
-        name: "Devorando.dev",
+        name: "Devorando.dev", width: 48, height: 48, loading: "lazy",
         url: "https://devorando.dev/",
         imgSrc: "https://devorando.dev/wp-content/uploads/2024/05/dev-4.png",
         alt: "Logo Devorando.dev",
         description: "A Youtube Channel website made from me. Using Elementor, Wordpress, Customize Theme, Self made Plugins and VPS Cloud."
     },
     {
-        name: "Glaucia PSI",
+        name: "Glaucia PSI", width: 48, height: 48, loading: "lazy",
         url: "https://glauciapsi.com/",
         imgSrc: "https://glauciapsi.com/wp-content/uploads/2022/05/LOGO-lotus.png",
         alt: "Logo Glaucia PSI",
         description: "A Psicologist Website made with Wordpress, Elementor Owner Widgets, Customized Theme anda VPS Cloud."
     },
     {
-        name: "O Rafa é Massa",
+        name: "O Rafa é Massa", width: 48, height: 48, loading: "lazy",
         url: "https://orafaemassa.com.br/",
         imgSrc: "https://orafaemassa.com.br/wp-content/uploads/2020/07/orafaemassa-sm.png",
         alt: "Logo Glaucia PSI",

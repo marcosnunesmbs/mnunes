@@ -1,3 +1,7 @@
+import { certifications } from './certifications.js';
+import { skills } from './skills.js';
+import { projects } from './projects.js';
+
 document.addEventListener('DOMContentLoaded', function () {
     // Certifications
     const certificationsContainer = document.getElementById('certifications-container');
@@ -6,6 +10,9 @@ document.addEventListener('DOMContentLoaded', function () {
             const certificationDiv = document.createElement('img');
             certificationDiv.src = certification.imgSrc;
             certificationDiv.alt = certification.alt;
+            if (certification.width) certificationDiv.width = certification.width;
+            if (certification.height) certificationDiv.height = certification.height;
+            if (certification.loading) certificationDiv.loading = certification.loading;
             certificationDiv.className = "w-20 h-20 md:w-32 md:h-32 transform transition-all duration-300 hover:w-36 hover:h-36";
             certificationsContainer.appendChild(certificationDiv);
         });
@@ -23,9 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
             </div>`;
 
             if (skill.image) {
-                skillDiv.innerHTML = `<img src="${skill.image}" alt="icon ${skill.name}" class="w-8 h-auto md:w-12 md:h-auto ${skill.image.split('.').pop() === 'svg' ? 'brightness-0 invert' : ''}"> ${tooltip}`;
-            } else {
-                skillDiv.innerHTML = `<i class="fa-brands ${skill.icon} text-white"></i> ${tooltip}`;
+                skillDiv.innerHTML = `<img src="${skill.image}" alt="icon ${skill.name}" width="${skill.width}" height="${skill.height}" loading="${skill.loading}" class="w-8 h-auto md:w-12 md:h-auto ${skill.image.split('.').pop() === 'svg' ? 'brightness-0 invert' : ''}"> ${tooltip}`;
             }
 
             skillsContainer.appendChild(skillDiv);
@@ -41,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
             projectDiv.innerHTML = `
                 <div class="flex flex-col items-center">
                     <a href="${project.url}" target="_blank">
-                        <img src="${project.imgSrc}" alt="${project.alt}"
+                        <img src="${project.imgSrc}" alt="${project.alt}" width="${project.width}" height="${project.height}" loading="${project.loading}"
                             class="w-full h-12 md:h-12 md:w-full mb-2 ${project.imgSrc.split('.').pop() === 'svg' ? 'brightness-0 invert' : ''}">
                     </a>
                     <h3 class="text-lg font-bold text-center">${project.name}</h3>
