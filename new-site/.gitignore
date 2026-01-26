@@ -4,6 +4,3 @@ build/
 *.log
 .env
 .DS_Store
-assets/css/output.css
-assets/js/bundle.js
-assets/js/bundle.min.js
