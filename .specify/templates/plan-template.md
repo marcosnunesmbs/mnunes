@@ -31,32 +31,7 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-**Performance-First Verification**:
-- [ ] Changes maintain or improve FCP/LCP/CLS/TBT metrics
-- [ ] All scripts use `defer` or `async` (except inline analytics)
-- [ ] No new runtime CSS compilation (e.g., Tailwind CDN)
-- [ ] Images optimized and properly formatted
-
-**Progressive Enhancement**:
-- [ ] Core content accessible without JavaScript
-- [ ] No-JS users can view portfolio information
-- [ ] Critical path independent of external resources
-
-**Static-First Architecture**:
-- [ ] Feature deployable as static files
-- [ ] No backend services required for core functionality
-- [ ] Client-side or build-time data generation
-
-**Accessibility & Standards**:
-- [ ] Semantic HTML used correctly
-- [ ] WCAG 2.1 Level AA compliance verified
-- [ ] Keyboard navigation functional
-- [ ] Valid HTML5 structure maintained
-
-**Measurement & Optimization**:
-- [ ] Performance baseline captured (Lighthouse scores)
-- [ ] Performance budgets defined and verified
-- [ ] Change impact measured against baseline
+[Gates determined based on constitution file]
 
 ## Project Structure
 
