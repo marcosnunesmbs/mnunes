@@ -1,0 +1,30 @@
+{
+  "duration": {
+    "before": 8530641,
+    "after": 6546344,
+    "beforeMs": 8530.64,
+    "afterMs": 6546.34,
+    "improvement": 23.26
+  },
+  "events": {
+    "before": 47974,
+    "after": 32152,
+    "reduction": 32.98
+  },
+  "resources": {
+    "before": 2,
+    "after": 0,
+    "beforeSizeKB": 10.17,
+    "afterSizeKB": 0,
+    "sizeReduction": 100
+  },
+  "fileSize": {
+    "beforeMB": 10.46,
+    "afterMB": 6.12,
+    "reduction": 41.43
+  },
+  "timestamps": {
+    "before": "2026-01-26T13:12:09.146Z",
+    "after": "2026-01-26T15:26:13.285Z"
+  }
+}

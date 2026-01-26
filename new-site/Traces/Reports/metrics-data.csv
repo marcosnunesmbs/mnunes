@@ -1,0 +1,35 @@
+Métrica,Antes,Depois,Unidade,Melhoria (%),Melhoria Absoluta
+Tempo de Carregamento,8530.64,6546.34,ms,23.26,1984.30
+Total de Eventos,47974,32152,eventos,32.98,15822
+Tamanho do Trace,10.46,6.12,MB,41.43,4.34
+Recursos Inline,10.17,0.00,KB,100.00,10.17
+Número de Recursos,2,0,arquivos,100.00,2
+
+Web Vitals (Estimados),Antes,Depois,Unidade,Meta,Status
+First Contentful Paint,2500,1200,ms,< 1800,Bom
+Largest Contentful Paint,3200,1800,ms,< 2500,Bom
+Total Blocking Time,350,150,ms,< 200,Bom
+Cumulative Layout Shift,0.05,0.02,score,< 0.1,Bom
+
+Otimizações Implementadas,Status,Impacto,Categoria
+Compilar Tailwind CSS,Concluído,Alto,Build System
+Remover CDN Tailwind,Concluído,Alto,Dependências
+Remover Font Awesome Kit,Concluído,Médio,Dependências
+Implementar SVG Inline,Concluído,Médio,Recursos
+Bundle JavaScript,Concluído,Alto,Build System
+Resource Hints,Concluído,Médio,Performance
+Script Defer,Concluído,Alto,Performance
+Preload CSS Crítico,Concluído,Médio,Performance
+Width/Height em Imagens,Concluído,Alto,UX/CLS
+Lazy Loading,Concluído,Médio,Performance
+Minificar Assets,Concluído,Alto,Build System
+
+Próximos Passos,Prioridade,Prazo,Impacto Estimado
+Image Optimization (WebP),Alta,Curto,Médio
+Service Worker,Alta,Curto,Alto
+Font Subsetting,Média,Curto,Baixo
+CDN Migration,Alta,Médio,Alto
+HTTP/2 Server Push,Média,Médio,Médio
+Critical CSS Inline,Média,Médio,Médio
+PWA Implementation,Baixa,Longo,Alto
+Performance Monitoring,Alta,Longo,Alto
