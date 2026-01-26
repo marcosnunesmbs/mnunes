@@ -1,5 +1,75 @@
 const skills = [
     {
+        name: "MCP Server",
+        icon: "mcp",
+        image: "./assets/img/logos/mcp.svg",
+        color: "bg-gray-800"
+    },
+    {
+        name: "Github Copilot",
+        icon: "github-copilot",
+        image: "./assets/img/logos/githubcopilot.svg",
+        color: "bg-gray-800"
+    },
+    {
+        name: "Gemini API",
+        icon: "gemini-api",
+        image: "./assets/img/logos/gemini.svg",
+        color: "bg-gray-800"
+    },
+    {
+        name: "OpenAI SDK",
+        icon: "openai-sdk",
+        image: "./assets/img/logos/openai.svg",
+        color: "bg-gray-800"
+    },
+    {
+        name: "Agno",
+        icon: "agno",
+        image: "./assets/img/logos/agno.svg",
+        color: "bg-gray-800"
+    },
+    {
+        name: "Langchain",
+        icon: "langchain",
+        image: "./assets/img/logos/langchain.svg",
+        color: "bg-gray-800"
+    },
+    {
+        name: "Azure Cloud",
+        icon: "azure",
+        image: "./assets/img/logos/azure.svg",
+        color: "bg-gray-800"
+    },
+    {
+        name: "Google Cloud",
+        icon: "google_cloud",
+        image: "https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg",
+        color: "bg-gray-800"
+    },
+    {
+        name: "Coolify",
+        icon: "coolify",
+        image: "./assets/img/logos/coolify.svg",
+        color: "bg-gray-800"
+    },
+    {
+        name: "Docker",
+        icon: "fa-docker",
+        color: "bg-blue-600"
+    },
+    {
+        name: "Linux",
+        icon: "fa-linux",
+        color: "bg-pink-600"
+    },
+    {
+        name: "Nginx",
+        icon: "nginx",
+        image: "./assets/img/logos/nginx.svg",
+        color: "bg-gray-800"
+    },
+    {
         name: "Laravel",
         icon: "fa-laravel",
         color: "bg-orange-600"
@@ -65,20 +135,10 @@ const skills = [
         color: "bg-yellow-500"
     },
     {
-        name: "Docker",
-        icon: "fa-docker",
-        color: "bg-blue-600"
-    },
-    {
-        name: "Linux",
-        icon: "fa-linux",
-        color: "bg-pink-600"
-    },
-    {
-        name: "Google Cloud",
-        icon: "google_cloud",
-        image: "https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg",
-        color: "bg-gray-800"
+        name: "TypeScript",
+        icon: "fa-js",
+        color: "bg-yellow-500",
+        image: "./assets/img/logos/typescript.svg"
     },
     {
         name: "MySQL",

@@ -1,6 +1,13 @@
 // assets/js/projects.js
 const projects = [
     {
+        name: "CoinGecko MCP",
+        url: "https://www.npmjs.com/package/mcp_coingecko_price_ts",
+        imgSrc: "./assets/img/logos/mcp.svg",
+        alt: "Logo of MCP Coingecko",
+        description: "A MCP Server module to get cryptocurrency prices from Coingecko API. Available on NPM."
+    },
+    {
         name: "NutriAI",
         url: "https://nutri.mnunes.xyz/",
         imgSrc: "https://nutri.mnunes.xyz/nutri-ai-logo-2.png",
