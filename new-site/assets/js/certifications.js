@@ -10,9 +10,14 @@ export const certifications = [
         alt: "Scrum Badge"
     },
     {
-        name: "AI-900", width: 128, height: 128, loading: "lazy",
+        name: "Azure AZ-900", width: 128, height: 128, loading: "lazy",
+        imgSrc: "./assets/img/badges/az-900.png",
+        alt: "Azure AZ-900 Badge"
+    },
+    {
+        name: "Azure AI-900", width: 128, height: 128, loading: "lazy",
         imgSrc: "./assets/img/badges/ai900.png",
-        alt: "AI-900 Badge"
+        alt: "Azure AI-900 Badge"
     },
     {
         name: "GitHub Copilot", width: 128, height: 128, loading: "lazy",
