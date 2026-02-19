@@ -1,6 +1,13 @@
 // assets/js/projects.js
 export const projects = [
     {
+        name: "Morpheus", width: 48, height: 48, loading: "lazy",
+        url: "https://morpheusproject.xyz/",
+        imgSrc: "https://morpheusproject.xyz/logo.png",
+        alt: "Logo of Morpheus",
+        description: "Morpheus is a \"local-first\" AI operator designed for developers. It runs as a background daemon that orchestrates interactions between LLMs, local tools (via MCP), and external communication channels (like Telegram)."
+    },
+    {
         name: "CoinGecko MCP", width: 48, height: 48, loading: "lazy",
         url: "https://www.npmjs.com/package/mcp_coingecko_price_ts",
         imgSrc: "./assets/img/logos/mcp.svg",
@@ -55,12 +62,5 @@ export const projects = [
         imgSrc: "https://glauciapsi.com/wp-content/uploads/2022/05/LOGO-lotus.png",
         alt: "Logo Glaucia PSI",
         description: "A Psicologist Website made with Wordpress, Elementor Owner Widgets, Customized Theme anda VPS Cloud."
-    },
-    {
-        name: "O Rafa é Massa", width: 48, height: 48, loading: "lazy",
-        url: "https://orafaemassa.com.br/",
-        imgSrc: "https://orafaemassa.com.br/wp-content/uploads/2020/07/orafaemassa-sm.png",
-        alt: "Logo Glaucia PSI",
-        description: "A E-commerce Website made with Wodpress and Woocommerce. Using Elementor page builder and a VPS Cloud."
-    },
+    }
 ];
