@@ -88,8 +88,9 @@ function renderSkills() {
             item.className = 'skill-item';
 
             if (isSvg && isLocal && skill.brandColor) {
+                const darkClass = skill.darkInvert ? ' skill-icon-dark-invert' : '';
                 item.innerHTML = `
-                    <div class="skill-icon" style="--brand-color: ${skill.brandColor}; -webkit-mask-image: url(${imgSrc}); mask-image: url(${imgSrc})" role="img" aria-label="${skill.name}"></div>
+                    <div class="skill-icon${darkClass}" style="--brand-color: ${skill.brandColor}; -webkit-mask-image: url(${imgSrc}); mask-image: url(${imgSrc})" role="img" aria-label="${skill.name}"></div>
                     <span>${skill.name}</span>
                 `;
             } else {

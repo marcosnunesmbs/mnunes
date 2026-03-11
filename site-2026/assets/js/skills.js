@@ -4,14 +4,16 @@ export const skills = [
         icon: "mcp",
         image: "./assets/img/logos/mcp.svg",
         color: "bg-gray-800",
-        brandColor: "#000000"
+        brandColor: "#000000",
+        darkInvert: true
     },
     {
         name: "Github Copilot", width: 80, height: 80, loading: "lazy",
         icon: "github-copilot",
         image: "./assets/img/logos/githubcopilot.svg",
         color: "bg-gray-800",
-        brandColor: "#000000"
+        brandColor: "#000000",
+        darkInvert: true
     },
     {
         name: "Gemini API", width: 80, height: 80, loading: "lazy",
@@ -114,7 +116,8 @@ export const skills = [
         name: "Git Hub", width: 80, height: 80, loading: "lazy",
         image: "./assets/img/logos/github.svg",
         color: "bg-gray-800",
-        brandColor: "#24292F"
+        brandColor: "#24292F",
+        darkInvert: true
     },
     {
         name: "PHP", width: 80, height: 80, loading: "lazy",
