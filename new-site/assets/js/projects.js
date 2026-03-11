@@ -50,13 +50,6 @@ export const projects = [
         description: "A Open Source PHP CLI to create Wordpress Custom Post Types, Elementor's Widgets and another utilityes by yaml/json files."
     },
     {
-        name: "Devorando.dev", width: 48, height: 48, loading: "lazy",
-        url: "https://devorando.dev/",
-        imgSrc: "https://devorando.dev/wp-content/uploads/2024/05/dev-4.png",
-        alt: "Logo Devorando.dev",
-        description: "A Youtube Channel website made from me. Using Elementor, Wordpress, Customize Theme, Self made Plugins and VPS Cloud."
-    },
-    {
         name: "Glaucia PSI", width: 48, height: 48, loading: "lazy",
         url: "https://glauciapsi.com/",
         imgSrc: "https://glauciapsi.com/wp-content/uploads/2022/05/LOGO-lotus.png",
