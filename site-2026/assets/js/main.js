@@ -38,6 +38,7 @@ const skillCategories = [
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
+    initThemeToggle();
     renderStats();
     renderSkills();
     renderCertifications();
@@ -81,13 +82,22 @@ function renderSkills() {
 
             const imgSrc = resolveAssetPath(skill.image);
             const isSvg = imgSrc.endsWith('.svg');
+            const isLocal = !imgSrc.startsWith('http');
 
             const item = document.createElement('div');
             item.className = 'skill-item';
-            item.innerHTML = `
-                <img src="${imgSrc}" alt="${skill.name}" width="32" height="32" loading="lazy"${isSvg ? ' class="brightness-0 invert"' : ''}>
-                <span>${skill.name}</span>
-            `;
+
+            if (isSvg && isLocal && skill.brandColor) {
+                item.innerHTML = `
+                    <div class="skill-icon" style="--brand-color: ${skill.brandColor}; -webkit-mask-image: url(${imgSrc}); mask-image: url(${imgSrc})" role="img" aria-label="${skill.name}"></div>
+                    <span>${skill.name}</span>
+                `;
+            } else {
+                item.innerHTML = `
+                    <img src="${imgSrc}" alt="${skill.name}" width="32" height="32" loading="lazy">
+                    <span>${skill.name}</span>
+                `;
+            }
             grid.appendChild(item);
         });
 
@@ -161,6 +171,39 @@ function initScrollAnimations() {
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
     document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+}
+
+/* ===== Theme Toggle ===== */
+function initThemeToggle() {
+    const btn = document.getElementById('theme-toggle');
+    const iconMoon = document.getElementById('icon-moon');
+    const iconSun = document.getElementById('icon-sun');
+    if (!btn) return;
+
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const isLight = saved === 'light' || (!saved && !prefersDark);
+
+    if (isLight) {
+        document.documentElement.classList.add('light');
+    }
+    updateIcon(isLight);
+
+    btn.addEventListener('click', () => {
+        const light = document.documentElement.classList.toggle('light');
+        localStorage.setItem('theme', light ? 'light' : 'dark');
+        updateIcon(light);
+    });
+
+    function updateIcon(light) {
+        if (iconMoon && iconSun) {
+            iconMoon.classList.toggle('hidden', light);
+            iconSun.classList.toggle('hidden', !light);
+        }
+        document.querySelectorAll('.logo-site').forEach(img => {
+            img.src = light ? '../img/logo.png' : '../img/logo-white.png';
+        });
+    }
 }
 
 /* ===== Navbar Scroll Effect ===== */
