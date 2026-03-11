@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+    --font-heading: 'Space Grotesk', system-ui, sans-serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+
+    --color-base-950: #020617;
+    --color-base-900: #0F172A;
+    --color-base-800: #1E293B;
+    --color-base-700: #334155;
+    --color-base-600: #475569;
+    --color-base-500: #64748B;
+    --color-base-400: #94A3B8;
+    --color-base-300: #CBD5E1;
+    --color-base-200: #E2E8F0;
+    --color-base-50: #F8FAFC;
+
+    --color-accent: #22C55E;
+    --color-accent-hover: #16A34A;
+    --color-accent-light: #4ADE80;
+    --color-accent-dark: #15803D;
+}
