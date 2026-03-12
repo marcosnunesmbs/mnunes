@@ -14,29 +14,6 @@ function resolveAssetPath(path) {
 }
 
 /** Skill categories for grouped rendering */
-const skillCategories = [
-    {
-        name: 'AI & Machine Learning',
-        skills: ['MCP Server', 'Github Copilot', 'Gemini API', 'OpenAI SDK', 'Agno', 'Langchain']
-    },
-    {
-        name: 'Cloud & Infrastructure',
-        skills: ['Azure Cloud', 'Google Cloud', 'Coolify', 'Docker', 'Linux', 'Nginx']
-    },
-    {
-        name: 'Backend',
-        skills: ['PHP', 'Laravel', 'Node.js', 'Python', 'WordPress']
-    },
-    {
-        name: 'Frontend',
-        skills: ['JavaScript', 'TypeScript', 'Angular', 'Vue.js', 'HTML5', 'CSS3']
-    },
-    {
-        name: 'Data & Tools',
-        skills: ['MySQL', 'MongoDB', 'Git', 'Git Hub', 'Elementor']
-    }
-];
-
 document.addEventListener('DOMContentLoaded', () => {
     initThemeToggle();
     renderStats();
@@ -64,22 +41,26 @@ function renderSkills() {
     const container = document.getElementById('skills-container');
     if (!container) return;
 
-    skillCategories.forEach(category => {
+    const categories = new Map();
+    skills.forEach(skill => {
+        if (!skill.category || !skill.image) return;
+        if (!categories.has(skill.category)) categories.set(skill.category, []);
+        categories.get(skill.category).push(skill);
+    });
+
+    categories.forEach((categorySkills, categoryName) => {
         const section = document.createElement('div');
         section.className = 'animate-on-scroll';
 
         const title = document.createElement('h3');
         title.className = 'skill-category-title';
-        title.textContent = category.name;
+        title.textContent = categoryName;
         section.appendChild(title);
 
         const grid = document.createElement('div');
         grid.className = 'grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3';
 
-        category.skills.forEach(skillName => {
-            const skill = skills.find(s => s.name === skillName);
-            if (!skill || !skill.image) return;
-
+        categorySkills.forEach(skill => {
             const imgSrc = resolveAssetPath(skill.image);
             const isSvg = imgSrc.endsWith('.svg');
             const isLocal = !imgSrc.startsWith('http');
