@@ -34,6 +34,13 @@ export const skills = [
         category: "AI & Machine Learning"
     },
     {
+        name: "Anthropic", width: 80, height: 80, loading: "lazy",
+        image: "./assets/img/logos/claude.svg",
+        color: "bg-amber-700",
+        brandColor: "#D97757",
+        category: "AI & Machine Learning"
+    },
+    {
         name: "Agno", width: 80, height: 80, loading: "lazy",
         icon: "agno",
         image: "./assets/img/logos/agno.svg",
@@ -116,6 +123,13 @@ export const skills = [
         category: "Backend"
     },
     {
+        name: "NestJS", width: 80, height: 80, loading: "lazy",
+        image: "./assets/img/logos/nestjs.svg",
+        color: "bg-red-600",
+        brandColor: "#E0234E",
+        category: "Backend"
+    },
+    {
         name: "Python", width: 80, height: 80, loading: "lazy",
         image: "./assets/img/logos/python.svg",
         color: "bg-blue-700",
@@ -142,6 +156,13 @@ export const skills = [
         color: "bg-blue-600",
         image: "./assets/img/logos/typescript.svg",
         brandColor: "#3178C6",
+        category: "Frontend"
+    },
+    {
+        name: "React", width: 80, height: 80, loading: "lazy",
+        image: "./assets/img/logos/reactjs.svg",
+        color: "bg-cyan-500",
+        brandColor: "#61DAFB",
         category: "Frontend"
     },
     {

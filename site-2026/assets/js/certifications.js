@@ -1,15 +1,5 @@
 export const certifications = [
     {
-        name: "ITIL Foundation", width: 128, height: 128, loading: "lazy",
-        imgSrc: "./assets/img/badges/itil.png",
-        alt: "ITIL Foundation Badge"
-    },
-    {
-        name: "Scrum", width: 128, height: 128, loading: "lazy",
-        imgSrc: "./assets/img/badges/scrum.png",
-        alt: "Scrum Badge"
-    },
-    {
         name: "Azure AZ-900", width: 128, height: 128, loading: "lazy",
         imgSrc: "./assets/img/badges/az-900.png",
         alt: "Azure AZ-900 Badge"
@@ -23,5 +13,15 @@ export const certifications = [
         name: "GitHub Copilot", width: 128, height: 128, loading: "lazy",
         imgSrc: "./assets/img/badges/copilot.png",
         alt: "GitHub Copilot Badge"
+    },
+    {
+        name: "ITIL Foundation", width: 128, height: 128, loading: "lazy",
+        imgSrc: "./assets/img/badges/itil.png",
+        alt: "ITIL Foundation Badge"
+    },
+    {
+        name: "Scrum", width: 128, height: 128, loading: "lazy",
+        imgSrc: "./assets/img/badges/scrum.png",
+        alt: "Scrum Badge"
     }
 ];
